@@ -12,3 +12,72 @@
         <input type = "image" src="reset.gif" onclick="document.newserform.reset(); return false;">
     </center>
 </head>
+<body>
+<br><br>
+<center>회원가입(<font size="2"><font color=red>*</font>표는 필수 항목입니다.</font>)</center>
+<form actionb="#" method="post" name="newserform">
+    <table border=1 align=center>
+        <tr>
+            <th width=100><font color=red>*</font> ID</th>
+            <td width=100><input type="text" size="10" maxlength="10" name="id" onblur="RemoveBlank(this)"><input type="button" value="중복확인" onclick="CheckNewid()"></td>
+        </tr>
+        <tr>
+            <th><font color=red>*</font> 암호</th>
+            <td><input type="password" size="10" maxlength="10" name="pwd"></td>
+        </tr>
+        <tr>
+            <th><font color=red>*</font> 암호 확인</th>
+            <td><input type="password" size="10" maxlength="10" name="pwdcf"></td>
+        </tr>
+        <tr>
+            <th>주민등록번호</th>
+            <td><input type="text" size=6 maxlength=6 name="sno1" onblur="RemoveBlank(this);"><input type="text" size=7 maxlength=7 name="sno2" onblur="RemoveBlank(this);"></td>
+        </tr>
+        <tr>
+            <th>전화번호</th>
+            <td><input type="text" size=3 maxlength=3 name="tel1" onblur="RemoveBlank(this);"><input type="text" size=4 maxlength=4 name="tel2" onblur="RemoveBlank(this);"><input type="text" size=4 maxlength=4 name="tel3" onblur="RemoveBlank(this);"></td>
+        </tr>
+        <tr>
+            <th><font color="red">*</font> 직업</th>
+            <td><select size=1 name="job">
+                <option value="0">--선택하세요--</option>
+                <option value="1">초등학생</option>
+                <option value="2">중학생</option>
+                <option value="3">고등학생</option>
+                <option value="4">대학생</option>
+                <option value="5">회사원</option>
+                <option value="6">주부</option>
+                <option value="7">기타</option>
+            </select></td>
+        </tr>
+        <tr><th>취미</th>
+        <script>
+
+        </script>
+        <td><select size=1 name="hobby1" onchange="CheckOtherHobby(this)">
+            <script>
+
+            </script>
+        </select>
+        <select size=1 name="hobby2" onchange="CheckOtherHobby(this)">
+            <script>
+
+            </script>
+        </select>
+        <select size=1 name="hobby3" onchange="CheckOtherHobby(this)">
+            <script>
+
+            </script>
+        </select>
+        </td>
+        </tr>
+        <tr><th><font color=red>*</font> 결혼여부</th>
+            <td><input type="radio" name="married" value=1>기혼
+            <input type="radio" name="married" value=0>미혼</td>
+        </tr>
+    </table><br>
+    <center>
+        
+    </center>
+</form>
+</body>
