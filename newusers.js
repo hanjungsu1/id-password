@@ -78,3 +78,38 @@ function CheckInputData() {
     }
     return true;
 }
+
+function CheckOtherHobby(theSelect) {
+    if (theSelect.options[theSelect.selectedIndex].value == '0') return;
+    if (theSelect != document.newuserform.hobby1) {
+        if (theSelect.options[theSelect.selectedIndex].value == document.newuserform.hobby1.options[document.newuserform.hobby1.selectedIndex].value) {
+            alert('첫번째 취미에서 선택하셨습니다.');
+            theSelect.options[0].selected = true;
+            theSelect.focus();
+        }
+    }
+    if (theSelect.options[theSelect.selectedIndex].value == '0') return;
+    if (theSelect != document.newuserform.hobby1) {
+        if (theSelect.options[theSelect.selectedIndex].value == document.newuserform.hobby1.options[document.newuserform.hobby1.selectedIndex].value) {
+            alert('첫번째 취미에서 선택하셨습니다.');
+            theSelect.options[0].selected = true;
+            theSelect.focus();
+        }
+    }
+    if (theSelect.options[theSelect.selectedIndex].value == '0') return;
+    if (theSelect != document.newuserform.hobby2) {
+        if (theSelect.options[theSelect.selectedIndex].value == document.newuserform.hobby2.options[document.newuserform.hobby2.selectedIndex].value) {
+            alert('두번째 취미에서 선택하셨습니다.');
+            theSelect.options[0].selected = true;
+            theSelect.focus();
+        }
+    }
+    if (theSelect.options[theSelect.selectedIndex].value == '0') return;
+    if (theSelect != document.newuserform.hobby3) {
+        if (theSelect.options[theSelect.selectedIndex].value == document.newuserform.hobby1.options[document.newuserform.hobby3.selectedIndex].value) {
+            alert('세번째 취미에서 선택하셨습니다.');
+            theSelect.options[0].selected = true;
+            theSelect.focus();
+        }
+    }
+}
