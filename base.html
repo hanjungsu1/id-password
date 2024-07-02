@@ -56,28 +56,32 @@
         </script>
         <td><select size=1 name="hobby1" onchange="CheckOtherHobby(this)">
             <script>
-
+                
             </script>
         </select>
-        <select size=1 name="hobby2" onchange="CheckOtherHobby(this)">
+        <select size = 1 name="hobby2" onchange="CheckOtherHobby(this)">
             <script>
 
             </script>
         </select>
-        <select size=1 name="hobby3" onchange="CheckOtherHobby(this)">
+        <select size = 1 name="hobby3" onchange="CheckOtherHobby(this)">
             <script>
 
             </script>
         </select>
         </td>
         </tr>
-        <tr><th><font color=red>*</font> 결혼여부</th>
-            <td><input type="radio" name="married" value=1>기혼
-            <input type="radio" name="married" value=0>미혼</td>
+        <tr><th><font color = red>*</font> 결혼여부</th>
+            <td>
+                <input type="radio" name="married" value = 1>기혼
+                <input type="radio" name="married" value = 0>미혼
+            </td>
         </tr>
     </table><br>
     <center>
-        
+        <input type = "image" src = "" onclick="return CheckInputData();">
+        &nbsp;&nbsp;&nbsp;
+        <input type = "image" src = "" onclick="document.newserform.reset(); return false;">
     </center>
 </form>
 </body>
