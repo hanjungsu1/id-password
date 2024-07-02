@@ -1,0 +1,7 @@
+str = '<option value="0">--선택하세요--</option>'
+str = str + '<option value = "1">운동</option>'
+str = str + '<option value = "2">독서</option>'
+str = str + '<option value = "3">낙시</option>'
+str = str + '<option value = "4">음악감상</option>'
+str = str + '<option value = "5">게임</option>'
+str = str + '<option value = "6">기타</option>'
